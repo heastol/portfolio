@@ -393,6 +393,11 @@ a.active {
     display: inline-block;
 }
 
+@media (max-width: 350px){
+    .img-responsive1{
+        display: none;
+    }
+}
 /*project skill section
 ==================================================*/
 #skill {
