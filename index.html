@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>이동호의 포트폴리오</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <!-- main style -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new TypeIt("#typeit", {
+                speed: 250,
+                startDelay: 500,
+            })
+              .type("Programmer.", { delay: 1000 })
+              .go();
+        });
+    </script>
+    <style>
+    .category {
+      margin: 50px 0;
+    }
+
+    .category h3 {
+      color: #34495e;
+      margin-bottom: 1.5rem;
+      font-size: 1.75rem;
+      text-align: center;
+    }
+
+    .skill-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .skill-item {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 0.75rem 1.25rem;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid #e0e0e0;
+      min-width: 120px;
+      min-height: 80px;
+      justify-content: center;
+    }
+
+    .skill-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      background-color: #f7f9fb;
+    }
+
+    .skill-item img {
+      width: 26px;
+      height: 26px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+
+            <div class="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
+            </div>
+
+        </div>
+    </div>
+    <!-- ./Preloader -->
+    
+    <!-- header -->
+    <header class="navbar-fixed-top">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#skill">skill</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ./header -->
+    
+    <!-- home -->
+    <div class="section" id="home" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="disply-table">
+                <div class="table-cell" data-aos="fade-up" data-aos-delay="0">
+                    <h1>PORTFOLIO</h1>
+                    <p>Dongho Lee</p>
+                    <h4></h4>
+                    <h1 id="typeit"></h1> </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./home -->
+    
+    <!-- about -->
+    <div class="section" id="about">
+        <div class="container">
+            <div class="col-md-6" data-aos="fade-up">
+                <h4>01</h4>
+                <h1 class="size-50">Know <br /> About me</h1>
+                <div class="h-50"></div>
+                <div class="about_text">
+                <p>하루하루 성장하는<br>
+                   프로그래머 이동호</p>
+                <p>항상 배움에 있어 겸손한 자세를 유지하며, 점진적으로 성장해나가는
+                   신입 프로그래머 이동호입니다.</p>
+                <p>저는 다양한 사회생활을 하면서 능동적으로 움직이고, 중간 자리에서
+                   사람들의 의견을 조율하는 역할을 많이 맡아 소통을 유연하게 할 수
+                   있는 능력을 길렀습니다.</p>
+                <p>이러한 저의 경험과 능력을 살려 다양한 사람들과 소통하며
+                   다양한 작품을 만드는 프로그래머가 되고 싶습니다.</p>
+                </div>
+                <div class="h-50"></div>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-6 about-img-div">
+                <div class="about-border" data-aos="fade-up" data-aos-delay=".5"></div>
+                <img src="img/profile.png" width="300" class="img-responsive profile" alt="" align="center" data-aos="fade-right" data-aos-delay="0" />
+                <img src="img/clover.png" class="img-responsive1" alt="" align="center" data-aos="fade-right" data-aos-delay="0" />
+            </div>
+        </div>
+    </div>
+    <!-- ./about -->
+    
+    <!-- projects -->
+    <div class="section" id="projects">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>02</h4>
+                <h1 class="size-50">My <br /> Projects</h1> 
+            </div>
+            <!-- main container -->
+            <div class="main-container portfolio-inner clearfix">
+                <!-- portfolio div -->
+                <div class="portfolio-div">
+                    <div class="portfolio">
+                        <!-- portfolio_filter -->
+                        <div class="categories-grid wow fadeInLeft">
+                            <nav class="categories">
+                                <ul class="portfolio_filter">
+                                    <li><a href="" class="active" data-filter="*">All</a></li>
+                                    <li><a href="" data-filter=".brand1">Yoonseul</a></li>
+                                    <li><a href="" data-filter=".brand2">Pleasant</a></li>
+                                    <li><a href="" data-filter=".brand3">안밤</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- portfolio_filter -->
+                        
+                        <!-- portfolio_container -->
+                        <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
+                            <!-- single work -->
+                            <div class="col-md-12 brand1">
+								<div class="col-md-4 col-sm-6">
+									<div class="portfolio_item"> <img src="img/work1.jpg" alt="image" class="img-responsive" />
+										
+									</div>
+								</div>
+
+								<div class="col-md-8 col-sm-6">
+									<div class="portfolio_item"> 
+										<div class="portfolio_item">
+											<div class="portfolio-border clearfix">
+												<div class="item_info">
+													<h3>Yoonseul</h3>
+													<p>한국 전통 증류식 소주</p>
+													<div class="project_btn_box">
+													<a href="https://heastol.github.io/yoonseul_guide/bibx_guide" target="_blank" class="project_btn">BI&amp;BX Guide</a>
+													<a href="https://heastol.github.io/yoonseul_guide/web" target="_blank" class="project_btn">Web Guide</a>
+                                                    <a href="https://heastol.github.io/yoonseul_ebook/ebook/sample/basic/index.html" target="_blank" class="project_btn">Ebook</a>
+                                                    <a href="https://heastol.github.io/yoonseul" target="_blank" class="project_btn">Web-Site</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>                          
+							</div>
+							<!-- end single work -->
+							
+							<!-- single work -->
+							<div class="col-md-12 brand2">
+                            
+								<div class="col-md-4 col-sm-6">
+									<div class="portfolio_item"> <img src="img/work2.jpg" alt="image" class="img-responsive" />
+										
+									</div>
+								</div>
+								
+								<div class="col-md-8 col-sm-6">
+									<div class="portfolio_item"> 
+										<div class="portfolio_item">
+											<div class="portfolio-border clearfix">
+												<div class="item_info">
+													<h3>Pleasant</h3>
+													<p>프리미엄 호텔(반응형)</p>
+													<div class="project_btn_box">
+													<a href="https://heastol.github.io/pleasant" target="_blank" class="project_btn">Web-Site</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+                            </div>
+							<!-- end single work -->
+
+                            <!-- single work -->
+							<div class="col-md-12 brand3">
+                            
+								<div class="col-md-4 col-sm-6">
+									<div class="portfolio_item"> <img src="img/work3.png" alt="image" class="img-responsive" />
+										
+									</div>
+								</div>
+								
+								<div class="col-md-8 col-sm-6">
+									<div class="portfolio_item"> 
+										<div class="portfolio_item">
+											<div class="portfolio-border clearfix">
+												<div class="item_info">
+													<h3>안밤</h3>
+													<p>부산시 밤길 안전 서비스</p>
+													<div class="project_btn_box">
+													<a href="http://bjava.iptime.org:8893/" target="_blank" class="project_btn">Web-Site</a>
+                                                    <a href="https://github.com/sumin020415/project_2" target="_blank" class="project_btn">GitHub</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+                            </div>
+                            <!-- end single work -->
+                            
+                        </div>
+                        <!-- end portfolio_container -->
+                    </div>
+                    <!-- portfolio -->
+                </div>
+                <!-- end portfolio div -->
+            </div>
+            <!-- end main container -->
+        </div>
+    </div>
+    <!-- ./projects -->
+
+    <!-- experience  -->
+    <div class="section" id="experience">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>03</h4>
+                <h1 class="size-50">My <br /> Experience</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-12">
+                <ul class="timeline">
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">2025.02 - 2025.07</p>
+                            <h3>부경대학교 인적자원개발센터</h3>
+                            <h4>빅데이터를 활용한 자바 개발자 과정</h4>
+                            <p>수료(예정)</p>
+                        </div>
+                    </li>
+                    <li class="timeline-event" data-aos="fade-up">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">2023.02 - 2023.08</p>
+                            <h3>부산 나래디자인학원</h3>
+                            <h4>컨텐츠융합(UIUX,웹퍼블리셔,영상)A 과정</h4>
+                            <p>수료</p>
+                        </div>
+                    </li>
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">2017.03 - 2024.02</p>
+                            <h3>부산외국어 대학교(BUFS)</h3>
+                            <h4>컴퓨터 공학과</h4>
+                            <p>졸업</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ./experience -->	
+
+    <!-- skill -->
+    <!-- <div class="section" id="skill">
+        <div class="container">
+            <div class="col-md-12" data-aos="fade-up">
+                <h4>04</h4>
+                <h1 class="size-50">Skill</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up">
+                <div class="chart" data-percent="95" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="title"><b>HTML/CSS</b> <br> 95%</span>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up">
+                <div class="chart" data-percent="90" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="title"><b>Ps</b> <br> 90%</span>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up">
+                <div class="chart" data-percent="80" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="title"><b>Ai</b> <br> 80%</span>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up">
+                <div class="chart" data-percent="70" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="title"><b>Pr</b> <br> 70%</span>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up">
+                <div class="chart" data-percent="65" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="title"><b>Ae</b> <br> 65%</span>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up">
+                <div class="chart" data-percent="85" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="title"><b>Id</b> <br> 85%</span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- ./skill -->
+
+    <section class="section" id="skill">
+        <div class="container" data-aos="fade-up">
+            <div class="col-md-12" data-aos="fade-up">
+                <h4>04</h4>
+                <h1 class="size-50">Skill</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="category" data-aos="fade-up">
+            <h3>Language</h3>
+            <div class="skill-list" data-aos="fade-up">
+                <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                Python
+                </div>
+                <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+                Java
+                </div>
+                <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                JavaScript
+                </div>
+            </div>
+            </div>
+
+            <div class="category" data-aos="fade-up">
+            <h3>FrontEnd</h3>
+            <div class="skill-list" data-aos="fade-up">
+                <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+                HTML
+                </div>
+                <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+                CSS
+                </div>
+                <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" />
+                Bootstrap
+                </div>
+            </div>
+            </div>
+
+            <div class="category" data-aos="fade-up">
+            <h3>Backend & DB</h3>
+            <div class="skill-list" data-aos="fade-up">
+                <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" />
+                Spring Boot
+                </div>
+                <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+                MySQL
+                </div>
+                <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" />
+                Oracle
+                </div>
+                <div class="skill-item">
+                <img src="https://img.icons8.com/ios-filled/50/000000/sql.png" alt="SQL" />
+                SQL
+                </div>
+            </div>
+            </div>
+
+            <div class="category" data-aos="fade-up">
+            <h3>Tool & Etc</h3>
+            <div class="skill-list" data-aos="fade-up">
+                <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                Git
+                </div>
+                <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Docker" />
+                Github
+                </div>
+                <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+                VSCode
+                </div>
+                <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+                Docker
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+    <!-- contact -->
+    <div class="section" id="contact">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>05</h4>
+                <h1 class="size-50">Contact Me</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <ion-icon name="phone-portrait" style="width:40px; height:50px;"></ion-icon>
+                <h3>Phone Number</h3>
+                <p>+82 7563 1917</p>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <ion-icon name="home" style="width:40px; height:50px;"></ion-icon>
+                <h3>Adress</h3>
+                <p>부산광역시 수영구</p>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <ion-icon name="mail" style="width:40px; height:50px;"></ion-icon>
+                <h3>Email</h3>
+                <p>ehdgh06@naver.com</p>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <ion-icon name="logo-github" style="width:40px; height:50px;"></ion-icon>
+                <h3><a href="https://github.com/heastol">Git</a></h3>
+                <p>MyGithub</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./contact -->
+
+    <!-- footer -->
+    <div class="section" id="footer">
+        <div class="container">
+            <div class="col-md-12">
+                <p>ⓒCopyright</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./contact -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!--  plugins  -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script><!--차트 제이쿼리 소스-->
+
+    <!--  main script  -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
